@@ -159,5 +159,14 @@ img {
 }
 
 .formcss {
+    display: flex;
+    justify-content: center;
+    align-content: center;
     align-items: center;
+}
+
+.footerimage {
+    font-family: 'Source Code Pro', monospace;
+    background-image: url("../images/backgroundimage.jpg");
+    height: 10em;
 }
