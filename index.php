@@ -48,20 +48,28 @@ require_once 'includes/functions.php';
         </section>
     </div>
 
-    <div>
-        <h1 class="factspage id" id="factspagehref">Facts about the wonders of the world.</h1>
-        <p class="factsforwonders">Facts about the wonders of the world.</p>
-    </div>
-
+    <h2 class="formcss" id="formhref">Form Input</h2>
     <section class="formcss">
-        <h1 class="formcss" id="formhref">Form Input</h1>
         <form method="post" action="newWonders.php">
-            <input type="text" name="Name" value="" required><br><br/>
-            <input type="text" name="Location" value="" required><br><br/>
-            <input type="text" name="Year Made" value="" required><br><br/>
-            <input type="submit" value="Submit">
+            <p>
+                <label for="Name">Name of Wonder:</label><br><br/>
+                <input type="text" name="name" id="name" value="" required><br><br/>
+            </p>
+            <p>
+                <label for="Name">Location of Wonder:</label><br><br/>
+                <input type="text" name="location" id="location" value="" required><br><br/>
+            </p>
+            <p>
+                <label for="Name">Year Wonder was made:</label><br><br/>
+                <input type="text" name="yearmade" id="yearmade" value="" required><br><br/>
+                <input type="submit" value="Submit">
+            </p>
         </form>
     </section>
+
+    <footer>
+        <div class="footerimage"</div>
+    </footer>
 
 </body>
 </html>
