@@ -39,9 +39,12 @@ function getImagePath(string $imagePath): string {
     return $path;
 }
 
-function addNewWonder(PDO $db, array $newWonder): bool {
-    $query = $db->prepare('INSERT INTO `wonders` (`name`, `location`, `yearmade`)' .
-        ' VALUES (:name, :location, :yearmade);');
+function addNewWonder(PDO $db, array $newWonder)
+{
+    $query = $db->prepare
+        ('INSERT INTO `wonders` (`name`, `location`, `yearmade`, `images`)' .
+            ' VALUES (:name, :location, :yearmade, "wondersofworld.jpg");'
+    );
     return $query->execute($newWonder);
 }
 
